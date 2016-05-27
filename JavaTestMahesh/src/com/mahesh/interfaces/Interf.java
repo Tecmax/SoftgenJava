@@ -1,29 +1,35 @@
 package com.mahesh.interfaces;
 
 interface MyInterface {
-	public void method1();
+	abstract void method1();
 
-	public void method2();
+	 void method2();
 }
 
-interface MyInterface1 {
-	public void method3();
+ interface MyInterface1 {
+ public void method3();
 
-	public void method4();
-}
+ public void method4();
+ }
 
-class Interf implements MyInterface,MyInterface1 {
+class Interf implements  MyInterface,MyInterface1{
+
+	public static void main(String arg[]) {
+		System.out.println("inside mainmethod");
+		MyInterface obj = new Interf();
+		obj.method1();
+		obj.method2();
+		MyInterface1 obj1 = new Interf();
+		obj1.method3();
+		obj1.method4();
+	}
+
 	public void method1() {
-		System.out.println("implementation of method1");
+		System.out.println("inside method 1");
 	}
 
 	public void method2() {
-		System.out.println("implementation of method2");
-	}
-
-	public static void main(String arg[]) {
-		MyInterface obj = new Interf();
-		obj.method1();
+		System.out.println("inside method 2");
 	}
 
 	@Override
@@ -37,4 +43,5 @@ class Interf implements MyInterface,MyInterface1 {
 		// TODO Auto-generated method stub
 		
 	}
+
 }

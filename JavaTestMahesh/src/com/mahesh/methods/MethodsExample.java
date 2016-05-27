@@ -2,16 +2,28 @@ package com.mahesh.methods;
 
 public class MethodsExample {
 	public static void main(String[] args) {
-		System.out.println("value is " + 32);
+//		System.out.println("value is " + 32);
 		MethodsExample obj = new MethodsExample();
+		String inteexample = "23434234";
+		if(obj.isValidInteger(inteexample)) {
+			System.out.println("Valid Integer " + inteexample);
+		} else {
+			System.out.println("Coontains String " + inteexample);
+		}
 		// obj.add(10,20);
 		// obj.add(10,20,24);
-		obj.add(10, 20);
-		obj.add(10, 20, 24);
-		// int a = 23;
-		// System.out.println("value is" + a);
+//		obj.add(10, 20);
+//		obj.add(10, 20, 24);
 	}
 
+	boolean isValidInteger(String number) {
+		try {
+			int n = Integer.parseInt(number);
+		} catch (NumberFormatException e) {
+			return false;
+		}
+		return true;
+	}
 	private void add(int i, int j) {
 		System.out.println("Sub value is " + j);
 		int k = i + j;
@@ -37,5 +49,4 @@ public class MethodsExample {
 		System.out.println("value is " + l);
 		System.out.println("value is " + i + j + k);
 	}
-
 }
