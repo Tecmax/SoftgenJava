@@ -1,6 +1,5 @@
 package com.mahesh.inheritance;
 
-import com.mahesh.methods.MethodsExample;
 
 //A class to display the attributes of the vehicle
 class Vehicle {
