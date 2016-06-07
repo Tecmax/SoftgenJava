@@ -6,6 +6,7 @@ public class CharAt {
 		char ch1 = str.charAt(0);
 		char ch2 = str.charAt(5);
 		char ch3 = str.charAt(11);
+		
 		char ch4 = str.charAt(20);
 		System.out.println("Character at 0 index is: " + ch1);
 		System.out.println("Character at 5th index is: " + ch2);

@@ -17,7 +17,9 @@ public class Example {
 	public String getSubMessage() {
 		return subMessage;
 	}
-
+	public long get(){
+		return 0;
+	}
 	public static void main(String[] args) {
 		Example exampleClass = new Example("Test");
 		System.out.println(exampleClass.getSubMessage());
