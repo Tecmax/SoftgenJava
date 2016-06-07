@@ -36,11 +36,11 @@ class AishDaughter extends Abhishek {
 		System.out.println("baby() method of Child class");
 	}
 	public static void main(String args[]) {
-		AishDaughter obj = new AishDaughter();
+		Amithab obj = new AishDaughter();
 		obj.dialogues();
 		obj.acting();
-		obj.dance();
-		obj.baby();
-		obj.emotions();
+//		obj.dance();
+//		obj.baby();
+//		obj.emotions();
 	}
 }

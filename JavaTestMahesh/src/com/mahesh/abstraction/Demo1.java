@@ -13,14 +13,18 @@ class Demo2 extends Demo1 {
 	 * don't declare abstract method of super class compiler would throw an
 	 * error
 	 */
-	public void disp2() {
-		System.out.println("I'm overriding abstract method");
-	}
+	
 
 	public static void main(String args[]) {
 		Demo2 obj = new Demo2();
 		obj.disp1();
 		obj.disp2();
+	}
+
+	@Override
+	public void disp2() {
+		// TODO Auto-generated method stub
+		
 	}
 
 //	@Override
